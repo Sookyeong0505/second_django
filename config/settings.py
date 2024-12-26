@@ -57,6 +57,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             # BASE_DIR / 'challenges' / 'templates'
+            BASE_DIR / 'templates',
         ],
         'APP_DIRS': True,  # 등록된 app 디렉토리 안의 templates 폴더를 자동으로 찾는다.
         'OPTIONS': {
