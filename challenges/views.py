@@ -25,7 +25,7 @@ def index(request):
 
     for month in months:
         month_path = reverse("month-challenge", args=[month])
-        list_items += f"<li><a href=\"{month_path}\">{month}</a></li>"
+        list_items += f"<li><a href=\"{month_path}\">{month.capitalize()}</a></li>"
     return HttpResponse(list_items)
 
 
