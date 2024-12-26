@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>All Challengs</title>
+</head>
+<body>
+    <ul>
+        {%  for month in months %}
+        <li>
+            <a href="{% url "month-challenge" month=month %}">{{ month|title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
