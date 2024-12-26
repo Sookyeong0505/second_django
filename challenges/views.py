@@ -44,8 +44,10 @@ def monthly_challenge(request, month):
     # path("<month>", views.monthly_challenges) 맞춰서 작성해야 함
     try:
         challenge_text = monthly_challenges[month]
-        response_data = f"<h1>{challenge_text}</h1>"
-        return HttpResponse(response_data)
+        return render(request, "challenges/challenge.html", {
+            "month_name": month.capitalize(),
+            "text": challenge_text
+        })
     except:
         return HttpResponseNotFound("<h1>Invalid month</h1>")
 
