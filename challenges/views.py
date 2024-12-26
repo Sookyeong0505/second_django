@@ -14,7 +14,7 @@ monthly_challenges = {
     "september": "9월이네. 아직은 덥지만 이제 좀 선선한걸? 곧 단풍이 지겠어.",
     "october": "알록달록한 단풍을 구경하자~ 맛있는 과일이 많은 10월이야",
     "november": "춥다 추워!! 11월은 따뜻하게 집에 있어야지.",
-    "december": "12월에는 메리 크리스마스~!!"
+    "december": None
 }
 
 # Create your views here.
