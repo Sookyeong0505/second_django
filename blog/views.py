@@ -3,5 +3,12 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def index(request):
-    return HttpResponse()
+
+def starting_page(request):
+    pass
+
+def posts(request):
+    pass
+
+def post_datail(request):
+    pass
