@@ -56,9 +56,9 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'templates',
+            BASE_DIR / 'templates'
         ],
-        'APP_DIRS': True,  # 등록된 app 디렉토리 안의 templates 폴더를 자동으로 찾는다.
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -118,8 +118,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'  # static 파일이 어느 url에 있는지 알려줌
 # 장고는 기본적으로 앱 폴더 안에 static 파일을 인지한다.
+STATIC_URL = 'static/'  # static 파일이 어느 url에 있는지 알려줌
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
